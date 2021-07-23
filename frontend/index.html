@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>부트스트랩 연습하기</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+
+
+    <style>
+
+ /*모든 class에 먹임!*/
+        *{
+            font-family: 'Gaegu', cursive;
+        }
+
+        .wrap{
+            width: 900px;
+            margin: auto;
+        }
+        .font-skyblue{
+            color: lightskyblue;
+        }
+        .comment{
+            color: blue;
+            font-weight: bold;
+        }
+        .posting-box{
+            margin : 10px auto 30px auto;
+            width:500px;
+
+            border:3px solid black;
+            border-radius:5px;
+
+            padding:25px;
+        }
+
+
+    </style>
+    <script>
+        function hey(){
+            alert ('안녕~!');
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="jumbotron">
+            <h1 class="display-4">나홀로 연습 메모장</h1>
+            <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다.</p>
+            <hr class="my-4">
+            <p class="lead">
+                <a onclick="hey()" class="btn btn-primary btn-lg" href="https://www.naver.com/" role="button">포스팅 박스 열기</a>
+            </p>
+        </div>
+            <div class="posting-box">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        <div class="card-columns">
+            <div class="card">
+                <img class="card-img-top" src="https://d1blyo8czty997.cloudfront.net/tour-photos/3251/1200x600/2877632373.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <a href="https://www.naver.com/" class="card-title font-skyblue">여기 기사 제목이 들어갑니다.</a>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                    <p class="comment">여기에 코멘트가 들어갑니다.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://d1blyo8czty997.cloudfront.net/tour-photos/3251/1200x600/2877632373.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <a href="https://www.naver.com/" class="card-title font-skyblue">여기 기사 제목이 들어갑니다.</a>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                    <p class="comment">여기에 코멘트가 들어갑니다.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://d1blyo8czty997.cloudfront.net/tour-photos/3251/1200x600/2877632373.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <a href="https://www.naver.com/" class="card-title font-skyblue">여기 기사 제목이 들어갑니다.</a>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                    <p class="comment">여기에 코멘트가 들어갑니다.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://d1blyo8czty997.cloudfront.net/tour-photos/3251/1200x600/2877632373.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <a href="https://www.naver.com/" class="card-title font-skyblue">여기 기사 제목이 들어갑니다.</a>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                    <p class="comment">여기에 코멘트가 들어갑니다.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://d1blyo8czty997.cloudfront.net/tour-photos/3251/1200x600/2877632373.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <a href="https://www.naver.com/" class="card-title font-skyblue">여기 기사 제목이 들어갑니다.</a>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                    <p class="comment">여기에 코멘트가 들어갑니다.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
