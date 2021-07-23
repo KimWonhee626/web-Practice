@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>1주차 과제</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+
+    <style>
+        *{ /*모든 class에 먹임!*/
+            font-family: 'Cute Font', cursive;
+        }
+        .wrap{
+            width:500px;
+            margin:10px auto 10px auto;
+        }
+        .product-image{
+            width:500px;
+            height:300px;
+
+            background-image: url("https://imgnn.seoul.co.kr/img/upload/2019/03/16/SSI_20190316182202_V.jpg");
+            background-size: cover;
+            background-position: center;
+
+            margin:auto;
+        }
+        .price{
+            font-size:20px;
+            color:blue;
+        }
+        .product-description{
+            width:500px;
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+        .product-order{
+            margin-bottom:20px;
+        }
+        .btn-order{
+            margin:auto;
+            width:100px;
+            display:block;
+        }
+
+    </style>
+    <script>
+        function order(){
+            alert("구매가 완료되었습니다!");
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="product-image"></div>
+        <div class="product-description">
+            <h1>남극 오로라여행 패키지!! <span class="price">3,590,000/4박5일</span></h1>
+            <p>날씨가 너무 더워서 뇌정지가 올 것 같아요 빨리 코로나 종식돼서 해외여행 가고 싶습니다!!
+                저만그런거 아니죠?? 시원한 남극에 가서 아름다운 오로라 죽기전에 꼭 한번 보고싶으네요~!</p>
+        </div>
+        <div class="product-order">
+            <h1>구매하기</h1>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">주문자 성함</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">인원</label>
+                </div>
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>--인원을 선택하세요.--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3">4</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">주소</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">전화번호</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+
+        </div>
+        <button type="button" onclick="order()" class="btn btn-primary btn-order btn-order">구매하기</button>
+    </div>
+
+</body>
+
+</html>
