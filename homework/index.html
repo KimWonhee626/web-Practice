@@ -46,7 +46,7 @@
         }
         .price{
             font-size:20px;
-            color:blue;
+            color:hotpink;
         }
         .product-description{
             width:500px;
@@ -61,12 +61,34 @@
             width:100px;
             display:block;
         }
+        .blue{
+            color: blue;
+        }
 
     </style>
     <script>
         function order(){
             alert("구매가 완료되었습니다!");
         }
+
+        function exchangeRate() {
+            $.ajax({
+                type: "GET",
+                url: "http://spartacodingclub.shop/sparta_api/rate",
+                data: {},
+                success: function (response) {
+                    let dollar = response['rate']
+                    let temp_html = `<p class="blue">달러 환율 : ${dollar}</p>`
+
+                    $('#exchangeRate').append(temp_html)
+                }
+
+            })
+        }
+
+        $(document).ready(function () {
+            exchangeRate();
+        });
 
     </script>
 </head>
@@ -79,6 +101,7 @@
             <p>날씨가 너무 더워서 뇌정지가 올 것 같아요 빨리 코로나 종식돼서 해외여행 가고 싶습니다!!
                 저만그런거 아니죠?? 시원한 남극에 가서 아름다운 오로라 죽기전에 꼭 한번 보고싶으네요~!</p>
         </div>
+        <p id="exchangeRate"></p>
         <div class="product-order">
             <h1>구매하기</h1>
             <div class="input-group mb-3">

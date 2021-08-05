@@ -20,7 +20,9 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <title>부트스트랩 연습하기</title>
+    <title>연습하기</title>
+
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,13 +55,21 @@
             border-radius:5px;
 
             padding:25px;
+            display: none;
         }
 
 
     </style>
     <script>
-        function hey(){
-            alert ('안녕~!');
+        function openclose(){
+            let status = $('#post-box').css('display');
+            if (status == 'block'){
+                $('#post-box').hide();
+                $('#btn-posting-box').text('포스팅박스 열기');
+            } else{ $('#post-box').show();
+               $('#btn-posting-box').text('포스팅박스 닫기');
+
+            }
         }
     </script>
 
@@ -72,28 +82,25 @@
             <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다.</p>
             <hr class="my-4">
             <p class="lead">
-                <a onclick="hey()" class="btn btn-primary btn-lg" href="https://www.naver.com/" role="button">포스팅 박스 열기</a>
+                <a onclick="openclose()" id="btn-posting-box" class="btn btn-primary btn-lg" href="#" role="button">포스팅 박스 열기</a>
             </p>
         </div>
-            <div class="posting-box">
+            <div class="posting-box" id="post-box">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                           placeholder="Enter email">
+                    <label>article URL</label>
+                    <input type="email" class="form-control" id="article-url" aria-describedby="emailHelp"
+                           placeholder="기사 주소를 입력하세요.">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                         else.</small>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="exampleInputPassword1">Comment</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="간단 코멘트를 입력하세요.">
                 </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+
+                <button type="submit" class="btn btn-primary">저장하기</button>
             </div>
-        <div class="card-columns">
+        <div class="card-columns" id="cards-box">
             <div class="card">
                 <img class="card-img-top" src="https://d1blyo8czty997.cloudfront.net/tour-photos/3251/1200x600/2877632373.jpg" alt="Card image cap">
                 <div class="card-body">
